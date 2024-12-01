@@ -1,0 +1,53 @@
+<!-- navbar.html -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Car Dealership</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="productList.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+        <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+      </ul>
+   
+       
+      </form>
+      
+
+      <!-- Conditional Admin Button or Log Out -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <button id="admin-btn" class="btn btn-danger" style="display: none;" onclick="window.location.href='login.html'">Admin Login</button>
+        </li>
+        <li class="nav-item">
+          <button id="logout-btn" class="btn btn-danger" style="display: none;" onclick="logout()">Log Out</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<script src="js/search.js"></script>
+<script>
+  // Check if the user is logged in as admin (admin flag in localStorage)
+  const isAdmin = localStorage.getItem('isAdmin');
+
+  // Show/hide the buttons based on user role
+  if (!isAdmin) {
+    document.getElementById('admin-btn').style.display = 'block'; // Show admin login button
+    document.getElementById('logout-btn').style.display = 'none'; // Hide logout button
+  } else {
+    document.getElementById('admin-btn').style.display = 'none'; // Hide admin login button
+    document.getElementById('logout-btn').style.display = 'block'; // Show logout button
+  }
+
+  // Handle the Log Out process
+  function logout() {
+    // Remove the isAdmin flag from localStorage
+    localStorage.removeItem('isAdmin');
+    
+    // Redirect to the home page or any other page
+    window.location.href = 'index.html'; // Redirect to homepage as a customer
+  }
+</script>

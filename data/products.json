@@ -1,0 +1,23 @@
+{
+    "product_details": [
+      {
+        "id": 1,
+        "name": "Tesla Model S",
+        "description": "A luxury electric sedan with cutting-edge technology.",
+        "price": 79999,
+        "image": "images/tesla-model-s.jpg",
+        "category": "Electric",
+        "availability": "In Stock"
+      },
+      {
+        "id": 2,
+        "name": "Ford Mustang",
+        "description": "Classic American muscle car with modern features.",
+        "price": 55999,
+        "image": "images/ford-mustang.jpg",
+        "category": "Sports",
+        "availability": "In Stock"
+      }
+    ]
+  }
+  

@@ -1,0 +1,24 @@
+{
+    "orders": [
+      {
+        "order_id": 1,
+        "customer_name": "John Doe",
+        "order_date": "2024-11-22",
+        "items": [
+          {
+            "product_id": 4,
+            "quantity": 1,
+            "price": 140000
+          },
+          {
+            "product_id": 7,
+            "quantity": 2,
+            "price": 39998
+          }
+        ],
+        "total_amount": 179998,
+        "status": "Processing"
+      }
+    ]
+  }
+      

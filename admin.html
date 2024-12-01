@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet"> <!-- For icons -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #343a40;
+      padding-top: 20px;
+    }
+
+    .sidebar a {
+      color: white;
+      padding: 15px;
+      text-decoration: none;
+      font-size: 18px;
+      display: block;
+    }
+
+    .sidebar a:hover {
+      background-color: #575d63;
+    }
+
+    .content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+
+    .card {
+      margin-bottom: 20px;
+    }
+
+    .card-header {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .btn {
+      font-size: 16px;
+      padding: 10px 20px;
+      margin-top: 10px;
+    }
+
+    .btn-secondary {
+      background-color: #6c757d;
+    }
+
+    .btn-secondary:hover {
+      background-color: #5a6268;
+    }
+
+    .btn-warning {
+      background-color: #ffc107;
+    }
+
+    .btn-warning:hover {
+      background-color: #e0a800;
+    }
+
+    .btn-danger {
+      background-color: #dc3545;
+    }
+
+    .btn-danger:hover {
+      background-color: #c82333;
+    }
+
+    .logout-btn {
+      margin-top: 20px;
+    }
+
+    .welcome-message {
+      font-size: 20px;
+      color: #007bff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <h4 class="text-center text-white">Admin Dashboard</h4>
+    <a href="index.html">Home</a>
+    <a href="productmanagement.html">Manage Products</a>
+    <a href="orders.html">View Orders</a>
+    <a href="index.html" id="logout-btn">Logout</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div class="container">
+      <h2>Welcome to the Admin Dashboard!</h2>
+      <p class="welcome-message">You have full access to manage dealership content.</p>
+
+      <!-- Admin Features Cards -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-cogs"></i> Product Management
+            </div>
+            <div class="card-body">
+              <p>Manage all products in the dealership's inventory.</p>
+              <button class="btn btn-primary" onclick="window.location.href='productmanagement.html'">Manage Products</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-list-alt"></i> Order Management
+            </div>
+            <div class="card-body">
+              <p>View and manage customer orders.</p>
+              <button class="btn btn-warning" onclick="window.location.href='orders.html'">View Orders</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Admin Actions -->
+      <div id="admin-actions" class="mt-4">
+        <h3>Admin Actions</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <button id="editproduct" class="btn btn-warning">Edit Product</button>
+          </div>
+          <div class="col-md-4">
+            <button id="deleteproduct" class="btn btn-danger">Delete Product</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <script>
+    // Check if the user is logged in as an admin
+    const isAdmin = localStorage.getItem('isAdmin');
+
+    if (!isAdmin) {
+      // If not an admin, redirect to login page
+      window.location.href = 'login.html';
+    }
+
+    // Handle the Log Out process
+    document.getElementById('logout-btn').addEventListener('click', function() {
+      // Remove the isAdmin flag from localStorage
+      localStorage.removeItem('isAdmin');
+      
+      // Redirect to the home page or any other page
+      window.location.href = 'index.html'; // Or choose another page as the default
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

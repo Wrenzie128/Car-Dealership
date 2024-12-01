@@ -1,0 +1,253 @@
+{
+  "Products": [
+    {
+      "id": 1,
+      "name": "Tesla Model S",
+      "description": "A luxury electric sedan with cutting-edge technology and outstanding range.",
+      "price": 79999,
+      "image": "images/teslamodel.avif",
+      "category": "Electric",
+      "availability": "In Stock",
+      "specs": {
+        "range": "396 miles",
+        "battery": "100 kWh Lithium-ion",
+        "horsepower": "670 hp",
+        "drivetrain": "All-Wheel Drive",
+        "seating_capacity": 5,
+        "top_speed": "155 mph"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Ford Mustang",
+      "description": "Classic American muscle car with modern performance and design.",
+      "price": 55999,
+      "image": "images/fordmustang.avif",
+      "category": "Sports",
+      "availability": "In Stock",
+      "specs": {
+        "engine": "5.0L V8",
+        "fuel_efficiency": "15 mpg city / 24 mpg highway",
+        "horsepower": "450 hp",
+        "drivetrain": "Rear-Wheel Drive",
+        "seating_capacity": 4,
+        "top_speed": "155 mph"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Chevrolet Camaro",
+      "description": "A high-performance sports car with bold styling and advanced features.",
+      "price": 42999,
+      "image": "images/chevroletcamaro.avif",
+      "category": "Sports",
+      "availability": "Out of Stock",
+      "specs": {
+        "engine": "6.2L V8",
+        "fuel_efficiency": "16 mpg city / 24 mpg highway",
+        "horsepower": "455 hp",
+        "drivetrain": "Rear-Wheel Drive",
+        "seating_capacity": 4,
+        "top_speed": "165 mph"
+      }
+    },
+    {
+      "id": 4,
+      "name": "BMW i8",
+      "description": "A futuristic plug-in hybrid sports car with iconic design.",
+      "price": 140000,
+      "image": "images/bmwi8.jpg",
+      "category": "Hybrid",
+      "availability": "In Stock",
+      "specs": {
+        "engine": "1.5L 3-cylinder hybrid",
+        "fuel_efficiency": "69 MPGe",
+        "horsepower": "369 hp",
+        "drivetrain": "All-Wheel Drive",
+        "seating_capacity": 4,
+        "top_speed": "155 mph"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Audi Q7",
+      "description": "A luxury SUV with advanced technology and versatile performance.",
+      "price": 69999,
+      "image": "images/audiq7.avif",
+      "category": "SUV",
+      "availability": "In Stock",
+      "specs": {
+        "engine": "3.0L V6",
+        "fuel_efficiency": "18 mpg city / 23 mpg highway",
+        "horsepower": "335 hp",
+        "drivetrain": "All-Wheel Drive",
+        "seating_capacity": 7,
+        "cargo_capacity": "69.6 cu ft"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Mercedes-Benz C-Class",
+      "description": "A compact luxury sedan with a perfect balance of comfort and performance.",
+      "price": 41999,
+      "image": "images/mercedezbenz.webp",
+      "category": "Sedan",
+      "availability": "In Stock",
+      "specs": {
+        "engine": "2.0L Turbocharged Inline-4",
+        "fuel_efficiency": "25 mpg city / 35 mpg highway",
+        "horsepower": "255 hp",
+        "drivetrain": "Rear-Wheel Drive",
+        "seating_capacity": 5,
+        "top_speed": "130 mph"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Toyota Corolla",
+      "description": "A reliable and fuel-efficient sedan for everyday use.",
+      "price": 19999,
+      "image": "images/corolla.png",
+      "category": "Sedan",
+      "availability": "In Stock",
+      "specs": {
+        "engine": "1.8L Inline-4",
+        "fuel_efficiency": "30 mpg city / 38 mpg highway",
+        "horsepower": "139 hp",
+        "drivetrain": "Front-Wheel Drive",
+        "seating_capacity": 5,
+        "cargo_capacity": "13.1 cu ft"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Honda CR-V",
+      "description": "A versatile compact SUV with spacious interiors.",
+      "price": 24999,
+      "image": "images/hondacvr.jpeg",
+      "category": "SUV",
+      "availability": "In Stock",
+      "specs": {
+        "engine": "1.5L Turbo Inline-4",
+        "fuel_efficiency": "28 mpg city / 34 mpg highway",
+        "horsepower": "190 hp",
+        "drivetrain": "All-Wheel Drive",
+        "seating_capacity": 5,
+        "cargo_capacity": "75.8 cu ft"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Lamborghini Huracan",
+      "description": "An exotic supercar with breathtaking performance.",
+      "price": 200000,
+      "image": "images/lamborghini.avif",
+      "category": "Supercar",
+      "availability": "Out of Stock",
+      "specs": {
+        "engine": "5.2L V10",
+        "fuel_efficiency": "13 mpg city / 18 mpg highway",
+        "horsepower": "630 hp",
+        "drivetrain": "All-Wheel Drive",
+        "seating_capacity": 2,
+        "top_speed": "201 mph"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Nissan Leaf",
+      "description": "An affordable electric car with eco-friendly features.",
+      "price": 31999,
+      "image": "images/nissanleaf.jpg",
+      "category": "Electric",
+      "availability": "In Stock",
+      "specs": {
+        "range": "226 miles",
+        "battery": "62 kWh Lithium-ion",
+        "horsepower": "214 hp",
+        "drivetrain": "Front-Wheel Drive",
+        "seating_capacity": 5,
+        "top_speed": "89 mph"
+      }
+    },
+    {
+      "id": 11,
+      "name": "XForce",
+      "description": "A stylish and reliable crossover SUV with modern features.",
+      "price": 1367000,
+      "image": "images/xforce.webp",
+      "category": "SUV",
+      "availability": "In Stock",
+      "specs": {
+        "engine": "2.0L Inline-4",
+        "fuel_efficiency": "26 mpg city / 31 mpg highway",
+        "horsepower": "180 hp",
+        "drivetrain": "All-Wheel Drive",
+        "seating_capacity": 5,
+        "cargo_capacity": "74.2 cu ft"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Mirage",
+      "description": "An affordable and compact city car with excellent fuel efficiency.",
+      "price": 711000,
+      "image": "images/mirage.webp",
+      "category": "Hatchback",
+      "availability": "In Stock",
+      "specs": {
+        "engine": "1.2L Inline-3",
+        "fuel_efficiency": "36 mpg city / 43 mpg highway",
+        "horsepower": "78 hp",
+        "drivetrain": "Front-Wheel Drive",
+        "seating_capacity": 5,
+        "cargo_capacity": "17.1 cu ft"
+      }
+    }
+  ],
+  "CartOrders": [
+    {
+      "id": 1,
+      "product_id": 3,
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "product_id": 5,
+      "quantity": 2
+    }
+  ],
+  "Order": [
+    {
+      "id": 1,
+      "order_date": "2024-11-22",
+      "customer_name": "John Doe",
+      "total_price": 144000,
+      "items": [
+        {
+          "product_id": 1,
+          "quantity": 1
+        },
+        {
+          "product_id": 5,
+          "quantity": 1
+        }
+      ],
+      "status": "Pending"
+    }
+  ],
+  "ProductOrder": [
+    {
+      "order_id": 1,
+      "product_id": 1,
+      "quantity": 1,
+      "price": 79999
+    },
+    {
+      "order_id": 1,
+      "product_id": 5,
+      "quantity": 1,
+      "price": 69999
+    }
+  ]
+}
